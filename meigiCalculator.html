@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <link rel="stylesheet" type = "text/css" href="css/meigiCalculatorcss.css">
+    <meta charset="utf-8">
+    <title>연호계산기</title>
+  </head>
+  <body>
+    <p>연호 -> 양력년도</p>
+    <br>
+    <select class="" name="" id = "meigivalue">
+      <option value="" selected>연호</option>
+      <option value="">明治</option>
+      <option value="">大正</option>
+      <option value="">昭和</option>
+      <option value="">平成</option>
+      <option value="">令和</option>
+    </select>
+    <input type="text" name="" value="" id="meigi">
+    <input type="submit" name="" value="확인" onclick = "meigicheck();">
+    <textarea name="name" rows="2" cols="80" placeholder="결과값이 나타납니다" id = "meigiresult" readonly="readonly"></textarea>
+    <hr>
+    <p>양력년도 - >연호</p>
+    <input type="text" name="" value="" id="year">
+    <input type="submit" name="" value="확인" onclick = "yearcheck();">
+    <textarea name="name" rows="2" cols="80" placeholder="결과값이 나타납니다" id = "yearresult" readonly="readonly"></textarea>
+    <br>
+    <script type="text/javascript" src="js/meigiCalculatorjs.js"></script>
+  </body>
+</html>
