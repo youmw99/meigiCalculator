@@ -4,10 +4,6 @@ body{
   margin : 0 auto;
 }
 
-.fullcontent{
-  margin : 50px;
-}
-
 /* Mobile Device */
 @media screen and (max-width : 767px) {
   *{
@@ -24,5 +20,7 @@ body{
 
 /* Desktop Device */
 @media screen and (min-width : 992px) {
-
+  .fullcontent{
+    margin : 200px;
+  }
 }
