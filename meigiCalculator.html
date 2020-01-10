@@ -1,30 +1,42 @@
+<!--부트스트랩 적용 안되는 이슈 있음!!-->
+<!--6, 25-->
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type = "text/css" href="css/meigiCalculatorcss.css">
     <meta charset="utf-8">
     <title>연호계산기</title>
   </head>
   <body>
-    <p>연호 -> 양력년도</p>
-    <br>
-    <select class="" name="" id = "meigivalue">
-      <option value="" selected>연호</option>
+    <div class="fullcontent">
+      <div class="changemeigi">
+        <p>연호 -> 양력년도</p>
+        <br>
+        <div class="form-group">
+    <select class="custom-select">
       <option value="">明治</option>
       <option value="">大正</option>
       <option value="">昭和</option>
       <option value="">平成</option>
       <option value="">令和</option>
     </select>
-    <input type="text" name="" value="" id="meigi">
-    <input type="submit" name="" value="확인" onclick = "meigicheck();">
-    <textarea name="name" rows="2" cols="80" placeholder="결과값이 나타납니다" id = "meigiresult" readonly="readonly"></textarea>
-    <hr>
-    <p>양력년도 - >연호</p>
-    <input type="text" name="" value="" id="year">
-    <input type="submit" name="" value="확인" onclick = "yearcheck();">
-    <textarea name="name" rows="2" cols="80" placeholder="결과값이 나타납니다" id = "yearresult" readonly="readonly"></textarea>
-    <br>
-    <script type="text/javascript" src="js/meigiCalculatorjs.js"></script>
+  </div>
+        <input type="text" name="" value="" id="meigi">
+        <button type="button" class="btn btn-info" onclick = "meigicheck();">확인</button>
+        <textarea class="form-control" id="meigiresult" type="text" placeholder="결과값이 나타납니다" readonly=""></textarea>
+      </div>
+      <div class="changeyear">
+        <p>양력년도 - >연호</p>
+        <input type="text" name="" value="" id="year">
+        <button type="button" class="btn btn-info" onclick = "yearcheck();">확인</button>
+    <textarea class="form-control" id="yearresult" type="text" placeholder="결과값이 나타납니다" readonly=""></textarea>
+        <br>
+      </div>
+      <script type="text/javascript" src="js/meigiCalculatorjs.js"></script>
+    </div>
+
   </body>
 </html>
+
+<!--부트스트랩 적용 안되는 이슈 있음!!-->
