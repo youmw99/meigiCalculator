@@ -21,6 +21,6 @@ body{
 /* Desktop Device */
 @media screen and (min-width : 992px) {
   .fullcontent{
-    margin : 200px;
+    margin : 800px;
   }
 }
