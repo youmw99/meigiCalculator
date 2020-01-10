@@ -11,8 +11,8 @@ body{
 /* Mobile Device */
 @media screen and (max-width : 767px) {
   *{
-    width: auto;
-    height : auto;
+    width: 200% auto;
+    height : 300% auto;
     font-size: 500%;
   }
 }
