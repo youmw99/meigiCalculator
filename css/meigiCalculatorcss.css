@@ -20,6 +20,10 @@ body{
 
 /* Desktop Device */
 @media screen and (min-width : 992px) {
+  .p{
+    font-size: 300%;
+    padding-top: 200px;
+  }
   .fullcontent{
     margin : 800px;
   }
