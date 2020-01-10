@@ -9,19 +9,22 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#" style="color:white">연호계산기</a>
+</nav>
   <div class="fullcontent">
     <div class="changemeigi">
-      <p>연호 -> 양력년도</p>
+      <p class = "typecontent">연호 -> 양력년도</p>
       <br>
       <div class="meigioption">
       <div class="form-group">
-        <select class="custom-select" id=meigivalue>
+        <select class="form-control" id="meigivalue">
           <option value="" selected="">연호</option>
-          <option value="">明治</option>
-          <option value="">大正</option>
-          <option value="">昭和</option>
-          <option value="">平成</option>
-          <option value="">令和</option>
+          <option value="1">明治</option>
+          <option value="2">大正</option>
+          <option value="3">昭和</option>
+          <option value="4">平成</option>
+          <option value="5">令和</option>
         </select>
       </div>
       <input type="text" name="" value="" id="meigi">
@@ -30,7 +33,7 @@
       <textarea class="form-control" id="meigiresult" type="text" placeholder="결과값이 나타납니다" readonly=""></textarea>
     </div>
     <div class="changeyear">
-      <p>양력년도 - >연호</p>
+      <p class="typecontent">양력년도 - >연호</p>
       <div class="yearoption">
       <input type="text" name="" value="" id="year">
       <button type="button" class="btn btn-info" onclick="yearcheck();">확인</button>
