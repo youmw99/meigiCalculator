@@ -10,7 +10,11 @@ body{
 
 /* Mobile Device */
 @media screen and (max-width : 767px) {
-
+  *{
+    width: auto;
+    height : auto;
+    font-size: 500%;
+  }
 }
 
 /* Tablet Device */
